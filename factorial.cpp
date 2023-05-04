@@ -1,18 +1,15 @@
-#include<stdio.h>
-int main()
-{
-	int n,i,fact =1;
-	printf("enter an integer:");
-	scanf("%d",&n);
-	if(n<0)
-	printf("error! factorial of a negative number doesn't exist:");
-	else
-	{
-		for(i=1;i<=n;i++)
-		{
-			fact*=i;
-		}
-		printf("factorial of %d is %d",n,fact);
-	}
-	return 0;
-}
+#include<stdio.h> 
+#include<stdlib.h> 
+main() 
+{ 
+int n,i=1,fact=1; 
+printf("Enter the value of n : "); 
+scanf("%d",&n); 
+while(i<=n) 
+{ 
+fact=fact*i; 
+i++; 
+} 
+printf("%d ! = %d",n,fact); 
+} 
+
